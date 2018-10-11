@@ -5,12 +5,14 @@ import (
 	"log"
 	"path"
 	"strings"
+	"time"
 	"ziggy/exporter"
 	"ziggy/mapbox"
 )
 
 var mbUser = flag.String("u", "hdh", "mapbox username")
 var mbKey = flag.String("k", "", "mapbox api key")
+var mdStore = flag.String("md", "/Users/hdh/src/ziggy/etc/sqlexports.json", "where to log data exports")
 
 func main() {
 	flag.Parse()
@@ -30,6 +32,14 @@ func main() {
 	}
 
 	if err := mb.CreateOrReplaceTileset(exportPath, tilesetName); err != nil {
+		log.Fatal(err)
+	}
+
+	if err := exporter.WriteExportMetadata(*mdStore, &exporter.SQLExportMetaData{
+		Date:  time.Now(),
+		Query: query,
+		Name:  tilesetName,
+	}); err != nil {
 		log.Fatal(err)
 	}
 

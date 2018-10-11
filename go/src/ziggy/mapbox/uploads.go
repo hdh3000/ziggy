@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
+	"os"
 	"os/exec"
 )
 
@@ -33,7 +33,6 @@ func (c *Client) CreateOrReplaceTileset(path, tilesetName string) error {
 	}
 
 	getS3Creds := func(apiKey, username string) (*tempCreds, error) {
-		fmt.Println(fmt.Sprintf("https://api.mapbox.com/uploads/v1/%s/credentials?access_token=%s", username, apiKey))
 		resp, err := http.Get(fmt.Sprintf("https://api.mapbox.com/uploads/v1/%s/credentials?access_token=%s", username, apiKey))
 		if err != nil {
 			return nil, err
@@ -56,10 +55,16 @@ func (c *Client) CreateOrReplaceTileset(path, tilesetName string) error {
 			fmt.Sprintf("AWS_SESSION_TOKEN=%s", creds.SessionToken),
 		}...)
 
-		if out, err := upload.CombinedOutput(); err != nil {
-			log.Println(string(out))
+		upload.Stdout = os.Stdout
+		upload.Stderr = os.Stderr
+		if err := upload.Start(); err != nil {
 			return err
 		}
+
+		if err := upload.Wait(); err != nil {
+			return err
+		}
+
 		return nil
 	}
 

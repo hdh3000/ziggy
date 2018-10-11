@@ -1,11 +1,14 @@
 package exporter
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"os"
 	"os/exec"
 	"path"
+	"sort"
+	"time"
 )
 
 func ExportShp(query, file string) (string, error) {
@@ -43,4 +46,56 @@ func ExportShp(query, file string) (string, error) {
 
 	return zipPath, nil
 
+}
+
+type SQLExportMetaData struct {
+	Date  time.Time
+	Query string
+	Name  string
+}
+
+func WriteExportMetadata(storeLoc string, meta *SQLExportMetaData) error {
+	rF, err := os.Open(storeLoc)
+	if err != nil {
+		return err
+	}
+	defer rF.Close()
+
+	var data []SQLExportMetaData
+	if err := json.NewDecoder(rF).Decode(&data); err != nil {
+		return err
+	}
+
+	data = append(data, *meta)
+
+	sort.Slice(data, func(i, j int) bool {
+		return data[i].Name < data[j].Name
+	})
+
+	b, err := json.MarshalIndent(data, "", " ")
+	if err != nil {
+		return err
+	}
+	rF.Close()
+
+	// Write to a backup...
+	bkFilePath := fmt.Sprintf("%s.%s", storeLoc, "bk")
+	bkW, err := os.Create(bkFilePath)
+	if _, err := bkW.Write(b); err != nil {
+		return err
+	}
+
+	wF, err := os.Create(storeLoc)
+	if err != nil {
+		return err
+	}
+	defer wF.Close()
+
+	if _, err := wF.Write(b); err != nil {
+		return err
+	}
+
+	os.Remove(bkFilePath)
+
+	return nil
 }
