@@ -1,0 +1,18 @@
+[
+ {
+  "TableName": "pnw_eco_regions",
+  "Date": "2018-10-11T11:09:05.615484173-07:00",
+  "Source": "http://data-wadnr.opendata.arcgis.com/datasets/ecoregions-of-the-pacific-northwest",
+  "SourceType": ".shp",
+  "DetectedPrj": 4326,
+  "ImportType": "AUTO"
+ },
+ {
+  "TableName": "wa_abandoned_roads",
+  "Date": "2018-10-11T11:09:26.198144569-07:00",
+  "Source": "http://data-wadnr.opendata.arcgis.com/datasets/forest-practices-orphaned-and-abandoned-roads",
+  "SourceType": ".shp",
+  "DetectedPrj": 4326,
+  "ImportType": "AUTO"
+ }
+]
