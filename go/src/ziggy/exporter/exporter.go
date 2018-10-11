@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"path"
 	"sort"
+	"strings"
 	"time"
 )
 
@@ -25,11 +26,11 @@ func ExportShp(query, file string) (string, error) {
 		"-p", "5432",
 		"-P", "postgres",
 		"-u", "postgres",
-		"postgres",
-		query,
+		"postgres", strings.Replace(query, "\n", " ", -1), // Strip out new lines for bash friendliness
 	)
 
-	if err := exportCmd.Run(); err != nil {
+	if out, err := exportCmd.CombinedOutput(); err != nil {
+		log.Println(string(out))
 		return "", err
 	}
 

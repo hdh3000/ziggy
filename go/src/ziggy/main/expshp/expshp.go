@@ -2,7 +2,9 @@ package main
 
 import (
 	"flag"
+	"io/ioutil"
 	"log"
+	"os"
 	"path"
 	"strings"
 	"time"
@@ -17,8 +19,18 @@ var mdStore = flag.String("md", "/Users/hdh/src/ziggy/etc/sqlexports.json", "whe
 func main() {
 	flag.Parse()
 	file := flag.Arg(0)
-	query := flag.Arg(1)
-	exportPath, err := exporter.ExportShp(query, file)
+
+	queryFile := flag.Arg(1)
+
+	qf, err := os.Open(queryFile)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer qf.Close()
+
+	query, _ := ioutil.ReadAll(qf)
+
+	exportPath, err := exporter.ExportShp(string(query), file)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +49,7 @@ func main() {
 
 	if err := exporter.WriteExportMetadata(*mdStore, &exporter.SQLExportMetaData{
 		Date:  time.Now(),
-		Query: query,
+		Query: string(query),
 		Name:  tilesetName,
 	}); err != nil {
 		log.Fatal(err)
