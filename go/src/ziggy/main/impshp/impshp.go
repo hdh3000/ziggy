@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"log"
+	"ziggy/filedata"
 	"ziggy/importer"
 )
 
@@ -21,8 +22,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := importer.WriteSqlMetaData(*mdStore, metadata); err != nil {
+	if err := filedata.NewMgr(*mdStore).Put(metadata); err != nil {
 		log.Fatal(err)
 	}
-
 }

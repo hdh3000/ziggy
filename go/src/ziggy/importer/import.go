@@ -12,7 +12,7 @@ import (
 const projectProjection = 4326
 
 type SQLImportMetaData struct {
-	TableName   string
+	TableName   string `fd:"key"`
 	Date        time.Time
 	Source      string
 	SourceType  string

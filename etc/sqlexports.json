@@ -5,18 +5,18 @@
   "Name": "abon-roads"
  },
  {
-  "Date": "2018-10-11T14:03:15.926867512-07:00",
-  "Query": "SELECT\n  GID\n  , GEOM\n  , EXTRACT(YEAR FROM TO_DATE(ABANDONMEN, 'YYYY-DD-MMT00:00:00.000Z')) AS YEAR\nFROM WA_ABANDONED_ROADS A\nORDER BY YEAR ASC;",
-  "Name": "abon-roads-test"
+  "Date": "2018-10-11T14:19:51.472947423-07:00",
+  "Query": "SELECT gid, expiration, extract(year from expiration) as year, geom\nFROM forest_practice_applications_wa a\nWHERE a.timharv_fp = 'UNEVEN-AGE' AND decision != 'DISAPROVED'",
+  "Name": "all-uacs"
  },
  {
-  "Date": "2018-10-11T13:25:06.599364275-07:00",
-  "Query": "select * from pnw_eco_regions;",
-  "Name": "test"
+  "Date": "2018-10-11T14:30:24.294403233-07:00",
+  "Query": "SELECT gid, expiration, extract(year from expiration) as year, st_pointonsurface(geom)\nFROM forest_practice_applications_wa a\nWHERE a.timharv_fp = 'UNEVEN-AGE' AND decision != 'DISAPROVED'",
+  "Name": "all-uacs-points"
  },
  {
-  "Date": "2018-10-11T13:26:59.133614022-07:00",
-  "Query": "select * from pnw_eco_regions;",
-  "Name": "test"
+  "Date": "2018-10-11T14:13:56.831288247-07:00",
+  "Query": "SELECT *\nFROM pnw_eco_regions;",
+  "Name": "pnw-eco-regions"
  }
 ]

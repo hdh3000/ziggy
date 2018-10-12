@@ -52,7 +52,7 @@ func ExportShp(query, file string) (string, error) {
 type SQLExportMetaData struct {
 	Date  time.Time
 	Query string
-	Name  string
+	Name  string `fd:"key"`
 }
 
 func WriteExportMetadata(storeLoc string, meta *SQLExportMetaData) error {
