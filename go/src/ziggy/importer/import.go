@@ -2,9 +2,14 @@ package importer
 
 import (
 	"encoding/json"
-	"fmt"
+	"errors"
+	"io"
+	"net/http"
+	"net/url"
 	"os"
-	"sort"
+	"os/exec"
+	"strconv"
+	"strings"
 	"time"
 )
 
@@ -20,48 +25,82 @@ type SQLImportMetaData struct {
 	ImportType  string
 }
 
-func WriteSqlMetaData(storeLoc string, meta *SQLImportMetaData) error {
-	rF, err := os.Open(storeLoc)
+type SQLDataSource interface {
+	ImpToSql() (*SQLImportMetaData, error) // Calls various shell commands to import file
+}
+
+func toTableName(in string) string {
+	return strings.Replace(strings.ToLower(in), "-", "_", -1)
+}
+
+func getPrj(prjDef string) (int, error) {
+	// This could look for an exact match, but I don't care that much.
+	type prjResp struct {
+		Exact     bool   `json:"exact"`
+		HTMLTerms string `json:"html_terms"`
+		Codes     []struct {
+			Name string `json:"name"`
+			Code string `json:"code"`
+			URL  string `json:"url"`
+		} `json:"codes"`
+		HTMLShowResults bool `json:"html_showResults"`
+	}
+
+	params := &url.Values{}
+	params.Add("mode", "wkt")
+	params.Add("terms", prjDef)
+
+	target := url.URL{
+		Scheme:   "http",
+		Host:     "prj2epsg.org",
+		Path:     "/search.json",
+		RawQuery: params.Encode(),
+	}
+
+	resp, err := http.Get(target.String())
 	if err != nil {
-		return err
-	}
-	defer rF.Close()
-
-	var data []SQLImportMetaData
-	if err := json.NewDecoder(rF).Decode(&data); err != nil {
-		return err
+		return 0, err
 	}
 
-	data = append(data, *meta)
-
-	sort.Slice(data, func(i, j int) bool {
-		return data[i].TableName < data[j].TableName
-	})
-
-	b, err := json.MarshalIndent(data, "", " ")
-	if err != nil {
-		return err
-	}
-	rF.Close()
-
-	// Write to a backup...
-	bkFilePath := fmt.Sprintf("%s.%s", storeLoc, "bk")
-	bkW, err := os.Create(bkFilePath)
-	if _, err := bkW.Write(b); err != nil {
-		return err
+	var data prjResp
+	if err := json.NewDecoder(resp.Body).Decode(&data); err != nil {
+		return 0, err
 	}
 
-	wF, err := os.Create(storeLoc)
-	if err != nil {
-		return err
-	}
-	defer wF.Close()
-
-	if _, err := wF.Write(b); err != nil {
-		return err
+	if len(data.Codes) < 1 {
+		return 0, errors.New("unable to find projection")
 	}
 
-	os.Remove(bkFilePath)
+	return strconv.Atoi(data.Codes[0].Code)
+}
+
+func pipeToPsql(cmd *exec.Cmd) error {
+	// very secure....
+	// auth here is done by a cloudsqlproxy.
+	psqlCmd := exec.Command(
+		"psql",
+		"host=127.0.0.1 sslmode=disable dbname=postgres user=postgres password=postgres",
+	)
+
+	// Pipe the commands together
+	r, w := io.Pipe()
+	defer w.Close()
+	cmd.Stdout = w
+	cmd.Stderr = os.Stderr
+	psqlCmd.Stdin = r
+	psqlCmd.Stdout = os.Stdout
+	psqlCmd.Stderr = os.Stderr
+
+	cmd.Start()
+	psqlCmd.Start()
+	if err := cmd.Wait(); err != nil {
+		return err
+	}
+	w.Close()
+
+	if err := psqlCmd.Wait(); err != nil {
+		return err
+	}
 
 	return nil
 }

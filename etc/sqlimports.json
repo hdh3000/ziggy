@@ -14,5 +14,37 @@
   "SourceType": ".shp",
   "DetectedPrj": 4326,
   "ImportType": "AUTO"
+ },
+ {
+  "TableName": "nlcd_2011_pnw",
+  "Date": "2018-10-13T16:09:56.439147705-07:00",
+  "Source": "https://www.mrlc.gov/nlcd2011.php",
+  "SourceType": ".tif",
+  "DetectedPrj": 5070,
+  "ImportType": "AUTO"
+ },
+ {
+  "TableName": "nf_usa_boundaries",
+  "Date": "2018-10-22T09:27:37.575662752-07:00",
+  "Source": "https://data.fs.usda.gov/geodata/edw/datasets.php?dsetCategory=boundaries",
+  "SourceType": ".shp",
+  "DetectedPrj": 4269,
+  "ImportType": "AUTO"
+ },
+ {
+  "TableName": "fia_plot_points_wa",
+  "Date": "2018-10-22T09:38:22.314800091-07:00",
+  "Source": "https://apps.fs.usda.gov/fia/datamart/CSV/datamart_csv.html",
+  "SourceType": ".shp",
+  "DetectedPrj": 4326,
+  "ImportType": "AUTO"
+ },
+ {
+  "TableName": "fia_plot_points_voroni",
+  "Date": "2018-10-22T12:56:08.894595387-07:00",
+  "Source": "derived in qgis from fia_wa_plot",
+  "SourceType": ".shp",
+  "DetectedPrj": 4326,
+  "ImportType": "AUTO"
  }
 ]

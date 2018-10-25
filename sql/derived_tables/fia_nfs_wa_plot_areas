@@ -1,0 +1,26 @@
+-- Create the plot areas first (because I didn't know what I was doing)
+CREATE TABLE fia_nfs_wa_plot_areas AS
+  SELECT
+    cn
+    , a.geom AS geom
+  FROM fia_plot_points_voroni a, contiguous_wa_nat_forest_blobs b
+  WHERE st_intersects(a.geom, b.geom);
+
+-- Cut them to the shape of the USFS boundaries when needed.
+CREATE TABLE
+  FIA_NFS_WA_PLOT_AREAS_CUT  AS
+  SELECT
+      a.CN AS CN
+    , CASE
+      WHEN
+        ST_COVEREDBY(A.GEOM, B.GEOM)
+        THEN
+          A.GEOM
+      ELSE
+        ST_MULTI(ST_INTERSECTION(A.GEOM, B.GEOM))
+      END  AS GEOM
+  FROM FIA_NFS_WA_PLOT_AREAS AS a
+    INNER JOIN CONTIGUOUS_WA_NAT_FOREST_BLOBS AS b
+      ON (ST_Intersects(a.geom, b.geom) AND NOT ST_Touches(a.geom, b.geom));
+
+

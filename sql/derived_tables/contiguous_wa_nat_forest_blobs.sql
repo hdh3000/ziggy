@@ -1,0 +1,19 @@
+DROP SEQUENCE get_id_seq;
+CREATE SEQUENCE get_id_seq;
+
+CREATE TABLE
+  CONTIGUOUS_WA_NAT_FOREST_BLOBS  AS
+  SELECT
+    NEXTVAL('get_id_seq') AS ID
+    , (ST_DUMP(ST_UNION((ST_INTERSECTION(A.GEOM, B.GEOM))))).GEOM
+  FROM
+    (
+      SELECT ST_UNION(GEOM) AS GEOM
+      FROM
+        WA_COUNTY_BOUNDARIES
+    ) A
+    , (
+        SELECT GEOM
+        FROM
+          NF_USA_BOUNDARIES
+      ) B;

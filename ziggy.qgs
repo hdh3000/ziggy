@@ -5,25 +5,25 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="merged_parcels_grays_harbor_county_wa20180906120527088" name="merged_parcels_grays_harbor_county_wa">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="all_sightings20181013144200489" name="all-sightings">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="merged_parcels_mason_county_wa20180906115712613" name="merged_parcels_mason_county_wa">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="fia_nfs_wa_plot_areas_cut20181023084208257" name="fia_nfs_wa_plot_areas_cut">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="merged_parcels_jefferson_county_wa20180906093824776" name="merged_parcels_jefferson_county_wa">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="fia_nfs_wa_plot_areas20181022163307663" name="fia_nfs_wa_plot_areas">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="land_parcels_jefferson_county_wa20180906092427493" name="land_parcels_jefferson_county_wa">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="land_parcels_jefferson_county_wa20180906085949475" name="land_parcels_jefferson_county_wa">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="WA_PLOT20181021151722408" name="WA_PLOT">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="wa_county_boundaries20180701092014387" name="wa_county_boundaries">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180703074253075" name="Google Physical">
+    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="nlcd_pnw_201120181016055329740" name="nlcd_pnw_2011">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="nlcd_pnw_tree_canopy_201120181013144146306" name="nlcd_pnw_tree_canopy_2011">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -31,10 +31,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-13874017.6276410911232233</xmin>
-      <ymin>5991072.55813589133322239</ymin>
-      <xmax>-13775707.1901410911232233</xmax>
-      <ymax>6046191.95657339133322239</ymax>
+      <xmin>-13926199.3240444902330637</xmin>
+      <ymin>5690446.00975057203322649</ymin>
+      <xmax>-12988187.93580267392098904</xmax>
+      <ymax>6292544.79795156326144934</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -63,7 +63,9 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2286" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_mason_county_wa20180906115712613"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_201120180703073930635"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_parcels_jefferson_county_wa20180906085949475"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voronoi_polygons20181021152236855"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_parcels_jefferson_county_wa20180906092427493"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:5070" srcDatumTransform="-1" destDatumTransform="-1" layerid="nlcd_pnw_tree_canopy_201120181013144146306"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_jefferson_county_wa20180906091951080"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_200920180703073932388"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="wa_public_lands_200420180701091949877"/>
@@ -72,52 +74,52 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_expired_200620180701092637148"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_expired_200720180701092636425"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_200620180703073931680"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="fia_nfs_wa_plot_areas_cut20181023084208257"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="fia_nfs_wa_plot_areas20181022163307663"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_200820180703073932747"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_200520180703073931313"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_jefferson_county_wa20180906093824776"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="all_sightings20181013144200489"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_label_points_grays_harbor_county_wa20180906120356504"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180701092117119"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="forest_practice_applications_wa_evenage_expired_200720180703073932050"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2927" srcDatumTransform="-1" destDatumTransform="-1" layerid="wa_public_lands_200420180703074228455"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="WA_PLOT20181021151722408"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_label_points_jefferson_county_wa20180906094824067"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:5070" srcDatumTransform="-1" destDatumTransform="-1" layerid="nlcd_pnw_201120181016055329740"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="merged_parcels_jefferson_county_wa20180906091543263"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>wa_county_boundaries20180701092014387</item>
-      <item>OpenLayers_plugin_layer20180703074253075</item>
-      <item>land_parcels_jefferson_county_wa20180906085949475</item>
-      <item>land_parcels_jefferson_county_wa20180906092427493</item>
-      <item>merged_parcels_jefferson_county_wa20180906093824776</item>
-      <item>merged_parcels_mason_county_wa20180906115712613</item>
-      <item>merged_parcels_grays_harbor_county_wa20180906120527088</item>
+      <item>nlcd_pnw_tree_canopy_201120181013144146306</item>
+      <item>all_sightings20181013144200489</item>
+      <item>nlcd_pnw_201120181016055329740</item>
+      <item>WA_PLOT20181021151722408</item>
+      <item>fia_nfs_wa_plot_areas20181022163307663</item>
+      <item>fia_nfs_wa_plot_areas_cut20181023084208257</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="merged_parcels_grays_harbor_county_wa" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="all-sightings" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="merged_parcels_grays_harbor_county_wa20180906120527088" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="all_sightings20181013144200489" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="merged_parcels_mason_county_wa" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="fia_nfs_wa_plot_areas_cut" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="merged_parcels_mason_county_wa20180906115712613" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="fia_nfs_wa_plot_areas_cut20181023084208257" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="merged_parcels_jefferson_county_wa" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="fia_nfs_wa_plot_areas" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="merged_parcels_jefferson_county_wa20180906093824776" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="fia_nfs_wa_plot_areas20181022163307663" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="land_parcels_jefferson_county_wa" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="WA_PLOT" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="land_parcels_jefferson_county_wa20180906092427493" visible="0"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="land_parcels_jefferson_county_wa" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="land_parcels_jefferson_county_wa20180906085949475" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="WA_PLOT20181021151722408" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="wa_county_boundaries" showFeatureCount="0">
@@ -125,884 +127,1352 @@
         <legendlayerfile isInOverview="0" layerid="wa_county_boundaries20180701092014387" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Physical" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20180703074253075" visible="0"/>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="nlcd_pnw_2011" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="nlcd_pnw_201120181016055329740" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="nlcd_pnw_tree_canopy_2011" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="nlcd_pnw_tree_canopy_201120181013144146306" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
-        <xmin>-20037508.33999999985098839</xmin>
-        <ymin>-20037508.33999999985098839</ymin>
-        <xmax>20037508.33999999985098839</xmax>
-        <ymax>20037508.33999999985098839</ymax>
+        <xmin>-124.79916900000000624</xmin>
+        <ymin>45.571159999999999</ymin>
+        <xmax>-116.94506099999999549</xmax>
+        <ymax>49.0018090000000015</ymax>
       </extent>
-      <id>OpenLayers_plugin_layer20180703074253075</id>
-      <datasource>.</datasource>
+      <id>WA_PLOT20181021151722408</id>
+      <datasource>file:../../Downloads/WA/WA_PLOT.csv?type=csv&amp;xField=LON&amp;yField=LAT&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Google Physical</layername>
+      <layername>WA_PLOT</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
-          <srsid>3857</srsid>
-          <srid>3857</srid>
-          <authid>EPSG:3857</authid>
-          <description>WGS 84 / Pseudo Mercator</description>
-          <projectionacronym>merc</projectionacronym>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
           <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">delimitedtext</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="CN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SRV_CN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CTY_CN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PREV_PLT_CN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="INVYR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="STATECD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="UNITCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="COUNTYCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PLOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PLOT_STATUS_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PLOT_NONSAMPLE_REASN_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MEASYEAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MEASMON">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MEASDAY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="REMPER">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="KINDCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DESIGNCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="RDDISTCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WATERCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LAT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LON">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ELEV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GROW_TYP_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MORT_TYP_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P2PANEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P3PANEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ECOSUBCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CONGCD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MANUAL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="KINDCD_NC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="QA_STATUS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CREATED_BY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CREATED_DATE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CREATED_IN_INSTANCE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MODIFIED_BY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MODIFIED_DATE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MODIFIED_IN_INSTANCE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MICROPLOT_LOC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DECLINATION">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="EMAP_HEX">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SAMP_METHOD_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUBP_EXAMINE_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MACRO_BREAKPOINT_DIA">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="INTENSITY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CYCLE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUBCYCLE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ECO_UNIT_PNW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TOPO_POSITION_PNW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="NF_SAMPLING_STATUS_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="NF_PLOT_STATUS_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="NF_PLOT_NONSAMPLE_REASN_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P2VEG_SAMPLING_STATUS_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P2VEG_SAMPLING_LEVEL_DETAIL_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="INVASIVE_SAMPLING_STATUS_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="INVASIVE_SPECIMEN_RULE_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DESIGNCD_P2A">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MANUAL_DB">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUBPANEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="COLOCATED_CD_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CONDCHNGCD_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="FUTFORCD_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MANUAL_NCRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MANUAL_NERS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MANUAL_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PAC_ISLAND_PNWRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PLOT_SEASON_NERS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PRECIPITATION">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PREV_MICROPLOT_LOC_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PREV_PLOT_STATUS_CD_RMRS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="REUSECD1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="REUSECD2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="REUSECD3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="235,177,174,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>CN</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name=".SF NS Text"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1917863491">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>-124.73157500000000653</xmin>
+        <ymin>45.68146500000000287</ymin>
+        <xmax>-119.22747139999999888</xmax>
+        <ymax>48.99962750000000256</ymax>
+      </extent>
+      <id>all_sightings20181013144200489</id>
+      <datasource>../../ziggy-data/exports/all-sightings/all-sightings.shp|layerid=0|subset="MONTH" > 7 AND "MONTH" &lt;= 12</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>all-sightings</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="SPECIES_CO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="COM_NAME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SCI_NAME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LOC_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LOC_NAME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OBS_DT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HOW_MANY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LAT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LNG">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OBS_VALID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OBS_REVIEW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LOCATION_P">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUB_NATION">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUB_NAT_01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUB_NAT_02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUB_NAT_03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="COUNTRY_CO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="COUNTRY_NA">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="USER_DISPL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SUB_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OBS_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CHECKLIST_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="PRESENCE_N">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HAS_COMMEN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HAS_RICHME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LAST_NAME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="FIRS_TNAME">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MONTH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="YEAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,19,204,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>COM_NAME</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name=".SF NS Text"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>fia_nfs_wa_plot_areas20181022163307663</id>
+      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='tid' srid=4326 type=MultiPolygon table="public"."fia_nfs_wa_plot_areas" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>fia_nfs_wa_plot_areas</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">postgres</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="cn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="156,10,2,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>cn</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name=".SF NS Text"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>-124.38980865478499993</xmin>
+        <ymin>45.52643966674799714</ymin>
+        <xmax>-116.87875366210900552</xmax>
+        <ymax>49.01785659790039773</ymax>
+      </extent>
+      <id>fia_nfs_wa_plot_areas_cut20181023084208257</id>
+      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='tid' srid=4326 type=MultiPolygon table="public"."fia_nfs_wa_plot_areas_cut" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>fia_nfs_wa_plot_areas_cut</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">postgres</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="cn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="134,81,212,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>cn</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name=".SF NS Text"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="2716560">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-2245512.88866000017151237</xmin>
+        <ymin>2560415.56045999983325601</ymin>
+        <xmax>-1411379.63470000005327165</xmax>
+        <ymax>3236606.42313000001013279</ymax>
+      </extent>
+      <id>nlcd_pnw_201120181016055329740</id>
+      <datasource>../../ziggy-data/nlcd_pnw_2011.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>nlcd_pnw_2011</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28001</srsid>
+          <srid>5070</srid>
+          <authid>EPSG:5070</authid>
+          <description>NAD83 / Conus Albers</description>
+          <projectionacronym>aea</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
       <customproperties>
-        <property key="ol_layer_type" value="Google Physical"/>
+        <property key="identify/format" value="Value"/>
       </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+          <rasterTransparency/>
+          <colorPalette>
+            <paletteEntry value="0" color="#000000" label="0"/>
+            <paletteEntry value="1" color="#00f900" label="1"/>
+            <paletteEntry value="2" color="#000000" label="2"/>
+            <paletteEntry value="3" color="#000000" label="3"/>
+            <paletteEntry value="4" color="#000000" label="4"/>
+            <paletteEntry value="5" color="#000000" label="5"/>
+            <paletteEntry value="6" color="#000000" label="6"/>
+            <paletteEntry value="7" color="#000000" label="7"/>
+            <paletteEntry value="8" color="#000000" label="8"/>
+            <paletteEntry value="9" color="#000000" label="9"/>
+            <paletteEntry value="10" color="#000000" label="10"/>
+            <paletteEntry value="11" color="#476ba0" label="11"/>
+            <paletteEntry value="12" color="#d1ddf9" label="12"/>
+            <paletteEntry value="13" color="#000000" label="13"/>
+            <paletteEntry value="14" color="#000000" label="14"/>
+            <paletteEntry value="15" color="#000000" label="15"/>
+            <paletteEntry value="16" color="#000000" label="16"/>
+            <paletteEntry value="17" color="#000000" label="17"/>
+            <paletteEntry value="18" color="#000000" label="18"/>
+            <paletteEntry value="19" color="#000000" label="19"/>
+            <paletteEntry value="20" color="#000000" label="20"/>
+            <paletteEntry value="21" color="#ddc9c9" label="21"/>
+            <paletteEntry value="22" color="#d89382" label="22"/>
+            <paletteEntry value="23" color="#ed0000" label="23"/>
+            <paletteEntry value="24" color="#aa0000" label="24"/>
+            <paletteEntry value="25" color="#000000" label="25"/>
+            <paletteEntry value="26" color="#000000" label="26"/>
+            <paletteEntry value="27" color="#000000" label="27"/>
+            <paletteEntry value="28" color="#000000" label="28"/>
+            <paletteEntry value="29" color="#000000" label="29"/>
+            <paletteEntry value="30" color="#000000" label="30"/>
+            <paletteEntry value="31" color="#b2ada3" label="31"/>
+            <paletteEntry value="32" color="#f9f9f9" label="32"/>
+            <paletteEntry value="33" color="#000000" label="33"/>
+            <paletteEntry value="34" color="#000000" label="34"/>
+            <paletteEntry value="35" color="#000000" label="35"/>
+            <paletteEntry value="36" color="#000000" label="36"/>
+            <paletteEntry value="37" color="#000000" label="37"/>
+            <paletteEntry value="38" color="#000000" label="38"/>
+            <paletteEntry value="39" color="#000000" label="39"/>
+            <paletteEntry value="40" color="#000000" label="40"/>
+            <paletteEntry value="41" color="#68aa63" label="41"/>
+            <paletteEntry value="42" color="#1c6330" label="42"/>
+            <paletteEntry value="43" color="#b5c98e" label="43"/>
+            <paletteEntry value="44" color="#000000" label="44"/>
+            <paletteEntry value="45" color="#000000" label="45"/>
+            <paletteEntry value="46" color="#000000" label="46"/>
+            <paletteEntry value="47" color="#000000" label="47"/>
+            <paletteEntry value="48" color="#000000" label="48"/>
+            <paletteEntry value="49" color="#000000" label="49"/>
+            <paletteEntry value="50" color="#000000" label="50"/>
+            <paletteEntry value="51" color="#a58c30" label="51"/>
+            <paletteEntry value="52" color="#ccba7c" label="52"/>
+            <paletteEntry value="53" color="#000000" label="53"/>
+            <paletteEntry value="54" color="#000000" label="54"/>
+            <paletteEntry value="55" color="#000000" label="55"/>
+            <paletteEntry value="56" color="#000000" label="56"/>
+            <paletteEntry value="57" color="#000000" label="57"/>
+            <paletteEntry value="58" color="#000000" label="58"/>
+            <paletteEntry value="59" color="#000000" label="59"/>
+            <paletteEntry value="60" color="#000000" label="60"/>
+            <paletteEntry value="61" color="#000000" label="61"/>
+            <paletteEntry value="62" color="#000000" label="62"/>
+            <paletteEntry value="63" color="#000000" label="63"/>
+            <paletteEntry value="64" color="#000000" label="64"/>
+            <paletteEntry value="65" color="#000000" label="65"/>
+            <paletteEntry value="66" color="#000000" label="66"/>
+            <paletteEntry value="67" color="#000000" label="67"/>
+            <paletteEntry value="68" color="#000000" label="68"/>
+            <paletteEntry value="69" color="#000000" label="69"/>
+            <paletteEntry value="70" color="#000000" label="70"/>
+            <paletteEntry value="71" color="#e2e2c1" label="71"/>
+            <paletteEntry value="72" color="#c9c977" label="72"/>
+            <paletteEntry value="73" color="#99c147" label="73"/>
+            <paletteEntry value="74" color="#77ad93" label="74"/>
+            <paletteEntry value="75" color="#000000" label="75"/>
+            <paletteEntry value="76" color="#000000" label="76"/>
+            <paletteEntry value="77" color="#000000" label="77"/>
+            <paletteEntry value="78" color="#000000" label="78"/>
+            <paletteEntry value="79" color="#000000" label="79"/>
+            <paletteEntry value="80" color="#000000" label="80"/>
+            <paletteEntry value="81" color="#dbd83d" label="81"/>
+            <paletteEntry value="82" color="#aa7028" label="82"/>
+            <paletteEntry value="83" color="#000000" label="83"/>
+            <paletteEntry value="84" color="#000000" label="84"/>
+            <paletteEntry value="85" color="#000000" label="85"/>
+            <paletteEntry value="86" color="#000000" label="86"/>
+            <paletteEntry value="87" color="#000000" label="87"/>
+            <paletteEntry value="88" color="#000000" label="88"/>
+            <paletteEntry value="89" color="#000000" label="89"/>
+            <paletteEntry value="90" color="#bad8ea" label="90"/>
+            <paletteEntry value="91" color="#b5d3e5" label="91"/>
+            <paletteEntry value="92" color="#b5d3e5" label="92"/>
+            <paletteEntry value="93" color="#b5d3e5" label="93"/>
+            <paletteEntry value="94" color="#b5d3e5" label="94"/>
+            <paletteEntry value="95" color="#70a3ba" label="95"/>
+            <paletteEntry value="96" color="#000000" label="96"/>
+            <paletteEntry value="97" color="#000000" label="97"/>
+            <paletteEntry value="98" color="#000000" label="98"/>
+            <paletteEntry value="99" color="#000000" label="99"/>
+            <paletteEntry value="100" color="#000000" label="100"/>
+            <paletteEntry value="101" color="#000000" label="101"/>
+            <paletteEntry value="102" color="#000000" label="102"/>
+            <paletteEntry value="103" color="#000000" label="103"/>
+            <paletteEntry value="104" color="#000000" label="104"/>
+            <paletteEntry value="105" color="#000000" label="105"/>
+            <paletteEntry value="106" color="#000000" label="106"/>
+            <paletteEntry value="107" color="#000000" label="107"/>
+            <paletteEntry value="108" color="#000000" label="108"/>
+            <paletteEntry value="109" color="#000000" label="109"/>
+            <paletteEntry value="110" color="#000000" label="110"/>
+            <paletteEntry value="111" color="#000000" label="111"/>
+            <paletteEntry value="112" color="#000000" label="112"/>
+            <paletteEntry value="113" color="#000000" label="113"/>
+            <paletteEntry value="114" color="#000000" label="114"/>
+            <paletteEntry value="115" color="#000000" label="115"/>
+            <paletteEntry value="116" color="#000000" label="116"/>
+            <paletteEntry value="117" color="#000000" label="117"/>
+            <paletteEntry value="118" color="#000000" label="118"/>
+            <paletteEntry value="119" color="#000000" label="119"/>
+            <paletteEntry value="120" color="#000000" label="120"/>
+            <paletteEntry value="121" color="#000000" label="121"/>
+            <paletteEntry value="122" color="#000000" label="122"/>
+            <paletteEntry value="123" color="#000000" label="123"/>
+            <paletteEntry value="124" color="#000000" label="124"/>
+            <paletteEntry value="125" color="#000000" label="125"/>
+            <paletteEntry value="126" color="#000000" label="126"/>
+            <paletteEntry value="127" color="#000000" label="127"/>
+            <paletteEntry value="128" color="#000000" label="128"/>
+            <paletteEntry value="129" color="#000000" label="129"/>
+            <paletteEntry value="130" color="#000000" label="130"/>
+            <paletteEntry value="131" color="#000000" label="131"/>
+            <paletteEntry value="132" color="#000000" label="132"/>
+            <paletteEntry value="133" color="#000000" label="133"/>
+            <paletteEntry value="134" color="#000000" label="134"/>
+            <paletteEntry value="135" color="#000000" label="135"/>
+            <paletteEntry value="136" color="#000000" label="136"/>
+            <paletteEntry value="137" color="#000000" label="137"/>
+            <paletteEntry value="138" color="#000000" label="138"/>
+            <paletteEntry value="139" color="#000000" label="139"/>
+            <paletteEntry value="140" color="#000000" label="140"/>
+            <paletteEntry value="141" color="#000000" label="141"/>
+            <paletteEntry value="142" color="#000000" label="142"/>
+            <paletteEntry value="143" color="#000000" label="143"/>
+            <paletteEntry value="144" color="#000000" label="144"/>
+            <paletteEntry value="145" color="#000000" label="145"/>
+            <paletteEntry value="146" color="#000000" label="146"/>
+            <paletteEntry value="147" color="#000000" label="147"/>
+            <paletteEntry value="148" color="#000000" label="148"/>
+            <paletteEntry value="149" color="#000000" label="149"/>
+            <paletteEntry value="150" color="#000000" label="150"/>
+            <paletteEntry value="151" color="#000000" label="151"/>
+            <paletteEntry value="152" color="#000000" label="152"/>
+            <paletteEntry value="153" color="#000000" label="153"/>
+            <paletteEntry value="154" color="#000000" label="154"/>
+            <paletteEntry value="155" color="#000000" label="155"/>
+            <paletteEntry value="156" color="#000000" label="156"/>
+            <paletteEntry value="157" color="#000000" label="157"/>
+            <paletteEntry value="158" color="#000000" label="158"/>
+            <paletteEntry value="159" color="#000000" label="159"/>
+            <paletteEntry value="160" color="#000000" label="160"/>
+            <paletteEntry value="161" color="#000000" label="161"/>
+            <paletteEntry value="162" color="#000000" label="162"/>
+            <paletteEntry value="163" color="#000000" label="163"/>
+            <paletteEntry value="164" color="#000000" label="164"/>
+            <paletteEntry value="165" color="#000000" label="165"/>
+            <paletteEntry value="166" color="#000000" label="166"/>
+            <paletteEntry value="167" color="#000000" label="167"/>
+            <paletteEntry value="168" color="#000000" label="168"/>
+            <paletteEntry value="169" color="#000000" label="169"/>
+            <paletteEntry value="170" color="#000000" label="170"/>
+            <paletteEntry value="171" color="#000000" label="171"/>
+            <paletteEntry value="172" color="#000000" label="172"/>
+            <paletteEntry value="173" color="#000000" label="173"/>
+            <paletteEntry value="174" color="#000000" label="174"/>
+            <paletteEntry value="175" color="#000000" label="175"/>
+            <paletteEntry value="176" color="#000000" label="176"/>
+            <paletteEntry value="177" color="#000000" label="177"/>
+            <paletteEntry value="178" color="#000000" label="178"/>
+            <paletteEntry value="179" color="#000000" label="179"/>
+            <paletteEntry value="180" color="#000000" label="180"/>
+            <paletteEntry value="181" color="#000000" label="181"/>
+            <paletteEntry value="182" color="#000000" label="182"/>
+            <paletteEntry value="183" color="#000000" label="183"/>
+            <paletteEntry value="184" color="#000000" label="184"/>
+            <paletteEntry value="185" color="#000000" label="185"/>
+            <paletteEntry value="186" color="#000000" label="186"/>
+            <paletteEntry value="187" color="#000000" label="187"/>
+            <paletteEntry value="188" color="#000000" label="188"/>
+            <paletteEntry value="189" color="#000000" label="189"/>
+            <paletteEntry value="190" color="#000000" label="190"/>
+            <paletteEntry value="191" color="#000000" label="191"/>
+            <paletteEntry value="192" color="#000000" label="192"/>
+            <paletteEntry value="193" color="#000000" label="193"/>
+            <paletteEntry value="194" color="#000000" label="194"/>
+            <paletteEntry value="195" color="#000000" label="195"/>
+            <paletteEntry value="196" color="#000000" label="196"/>
+            <paletteEntry value="197" color="#000000" label="197"/>
+            <paletteEntry value="198" color="#000000" label="198"/>
+            <paletteEntry value="199" color="#000000" label="199"/>
+            <paletteEntry value="200" color="#000000" label="200"/>
+            <paletteEntry value="201" color="#000000" label="201"/>
+            <paletteEntry value="202" color="#000000" label="202"/>
+            <paletteEntry value="203" color="#000000" label="203"/>
+            <paletteEntry value="204" color="#000000" label="204"/>
+            <paletteEntry value="205" color="#000000" label="205"/>
+            <paletteEntry value="206" color="#000000" label="206"/>
+            <paletteEntry value="207" color="#000000" label="207"/>
+            <paletteEntry value="208" color="#000000" label="208"/>
+            <paletteEntry value="209" color="#000000" label="209"/>
+            <paletteEntry value="210" color="#000000" label="210"/>
+            <paletteEntry value="211" color="#000000" label="211"/>
+            <paletteEntry value="212" color="#000000" label="212"/>
+            <paletteEntry value="213" color="#000000" label="213"/>
+            <paletteEntry value="214" color="#000000" label="214"/>
+            <paletteEntry value="215" color="#000000" label="215"/>
+            <paletteEntry value="216" color="#000000" label="216"/>
+            <paletteEntry value="217" color="#000000" label="217"/>
+            <paletteEntry value="218" color="#000000" label="218"/>
+            <paletteEntry value="219" color="#000000" label="219"/>
+            <paletteEntry value="220" color="#000000" label="220"/>
+            <paletteEntry value="221" color="#000000" label="221"/>
+            <paletteEntry value="222" color="#000000" label="222"/>
+            <paletteEntry value="223" color="#000000" label="223"/>
+            <paletteEntry value="224" color="#000000" label="224"/>
+            <paletteEntry value="225" color="#000000" label="225"/>
+            <paletteEntry value="226" color="#000000" label="226"/>
+            <paletteEntry value="227" color="#000000" label="227"/>
+            <paletteEntry value="228" color="#000000" label="228"/>
+            <paletteEntry value="229" color="#000000" label="229"/>
+            <paletteEntry value="230" color="#000000" label="230"/>
+            <paletteEntry value="231" color="#000000" label="231"/>
+            <paletteEntry value="232" color="#000000" label="232"/>
+            <paletteEntry value="233" color="#000000" label="233"/>
+            <paletteEntry value="234" color="#000000" label="234"/>
+            <paletteEntry value="235" color="#000000" label="235"/>
+            <paletteEntry value="236" color="#000000" label="236"/>
+            <paletteEntry value="237" color="#000000" label="237"/>
+            <paletteEntry value="238" color="#000000" label="238"/>
+            <paletteEntry value="239" color="#000000" label="239"/>
+            <paletteEntry value="240" color="#000000" label="240"/>
+            <paletteEntry value="241" color="#000000" label="241"/>
+            <paletteEntry value="242" color="#000000" label="242"/>
+            <paletteEntry value="243" color="#000000" label="243"/>
+            <paletteEntry value="244" color="#000000" label="244"/>
+            <paletteEntry value="245" color="#000000" label="245"/>
+            <paletteEntry value="246" color="#000000" label="246"/>
+            <paletteEntry value="247" color="#000000" label="247"/>
+            <paletteEntry value="248" color="#000000" label="248"/>
+            <paletteEntry value="249" color="#000000" label="249"/>
+            <paletteEntry value="250" color="#000000" label="250"/>
+            <paletteEntry value="251" color="#000000" label="251"/>
+            <paletteEntry value="252" color="#000000" label="252"/>
+            <paletteEntry value="253" color="#000000" label="253"/>
+            <paletteEntry value="254" color="#000000" label="254"/>
+            <paletteEntry value="255" color="#000000" label="255"/>
+          </colorPalette>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>-124.62226867675799724</xmin>
-        <ymin>47.51421737670899859</ymin>
-        <xmax>-122.60118865966799717</xmax>
-        <ymax>48.14735412597659803</ymax>
+        <xmin>-2202325.51604000013321638</xmin>
+        <ymin>2470339.04043000005185604</ymin>
+        <xmax>-1443461.6829299998935312</xmax>
+        <ymax>3244009.972719999961555</ymax>
       </extent>
-      <id>land_parcels_jefferson_county_wa20180906085949475</id>
-      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='gid' srid=4326 type=MultiPolygon table="public"."land_parcels_jefferson_county_wa" (geom) sql="owner_name" = ''</datasource>
+      <id>nlcd_pnw_tree_canopy_201120181013144146306</id>
+      <datasource>../../ziggy-data/nlcd_pnw_tree_canopy_2011.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>land_parcels_jefferson_county_wa</layername>
+      <layername>nlcd_pnw_tree_canopy_2011</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression>COALESCE( "owner_name", '&lt;NULL>' )</previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="gid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="objectid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pin">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pin_string">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="land_use">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="lu_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="prop_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="av_year">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="owner_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="owner_name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="state_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="tax_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="school_dis">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fire_dist">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="planning_a">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="ttl_acres">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="legal_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cycle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hood_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hood_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="subdv_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="subdv_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="township">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="range">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="section_">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="qtr_sectio">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_addr">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_city">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_zip">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="certifiedf">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_imps">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_land">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_total">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="notes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_reet">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_deed">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_price">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_multi">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_rcode">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_rdesc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="down_date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="buildingph">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="globalid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pacsweb_ye">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="shapearea">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="shapelen">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="168,152,251,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>owner_name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name=".SF NS Text"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="gid"/>
-          <column width="-1" hidden="0" type="field" name="objectid"/>
-          <column width="-1" hidden="0" type="field" name="pin"/>
-          <column width="-1" hidden="0" type="field" name="pin_string"/>
-          <column width="-1" hidden="0" type="field" name="land_use"/>
-          <column width="-1" hidden="0" type="field" name="lu_desc"/>
-          <column width="-1" hidden="0" type="field" name="prop_id"/>
-          <column width="-1" hidden="0" type="field" name="av_year"/>
-          <column width="-1" hidden="0" type="field" name="owner_id"/>
-          <column width="-1" hidden="0" type="field" name="owner_name"/>
-          <column width="-1" hidden="0" type="field" name="state_code"/>
-          <column width="-1" hidden="0" type="field" name="tax_code"/>
-          <column width="-1" hidden="0" type="field" name="school_dis"/>
-          <column width="-1" hidden="0" type="field" name="fire_dist"/>
-          <column width="-1" hidden="0" type="field" name="planning_a"/>
-          <column width="-1" hidden="0" type="field" name="ttl_acres"/>
-          <column width="-1" hidden="0" type="field" name="legal_desc"/>
-          <column width="-1" hidden="0" type="field" name="cycle"/>
-          <column width="-1" hidden="0" type="field" name="hood_code"/>
-          <column width="-1" hidden="0" type="field" name="hood_desc"/>
-          <column width="-1" hidden="0" type="field" name="subdv_code"/>
-          <column width="-1" hidden="0" type="field" name="subdv_desc"/>
-          <column width="-1" hidden="0" type="field" name="township"/>
-          <column width="-1" hidden="0" type="field" name="range"/>
-          <column width="-1" hidden="0" type="field" name="section_"/>
-          <column width="-1" hidden="0" type="field" name="qtr_sectio"/>
-          <column width="-1" hidden="0" type="field" name="situs_addr"/>
-          <column width="-1" hidden="0" type="field" name="situs_city"/>
-          <column width="-1" hidden="0" type="field" name="situs_zip"/>
-          <column width="-1" hidden="0" type="field" name="certifiedf"/>
-          <column width="-1" hidden="0" type="field" name="cfmv_imps"/>
-          <column width="-1" hidden="0" type="field" name="cfmv_land"/>
-          <column width="-1" hidden="0" type="field" name="cfmv_total"/>
-          <column width="-1" hidden="0" type="field" name="notes"/>
-          <column width="-1" hidden="0" type="field" name="sale_reet"/>
-          <column width="-1" hidden="0" type="field" name="sale_deed"/>
-          <column width="-1" hidden="0" type="field" name="sale_price"/>
-          <column width="-1" hidden="0" type="field" name="sale_date"/>
-          <column width="-1" hidden="0" type="field" name="sale_multi"/>
-          <column width="-1" hidden="0" type="field" name="sale_rcode"/>
-          <column width="-1" hidden="0" type="field" name="sale_rdesc"/>
-          <column width="-1" hidden="0" type="field" name="down_date"/>
-          <column width="-1" hidden="0" type="field" name="buildingph"/>
-          <column width="-1" hidden="0" type="field" name="globalid"/>
-          <column width="-1" hidden="0" type="field" name="pacsweb_ye"/>
-          <column width="-1" hidden="0" type="field" name="shapearea"/>
-          <column width="-1" hidden="0" type="field" name="shapelen"/>
-          <column width="-1" hidden="1" type="actions"/>
-        </columns>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>land_parcels_jefferson_county_wa20180906092427493</id>
-      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='gid' srid=4326 type=MultiPolygon table="public"."land_parcels_jefferson_county_wa" (geom) sql=</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>land_parcels_jefferson_county_wa</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="gid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="objectid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pin">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pin_string">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="land_use">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="lu_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="prop_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="av_year">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="owner_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="owner_name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="state_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="tax_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="school_dis">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fire_dist">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="planning_a">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="ttl_acres">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="legal_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cycle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hood_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hood_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="subdv_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="subdv_desc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="township">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="range">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="section_">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="qtr_sectio">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_addr">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_city">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="situs_zip">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="certifiedf">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_imps">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_land">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cfmv_total">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="notes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_reet">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_deed">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_price">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_multi">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_rcode">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="sale_rdesc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="down_date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="buildingph">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="globalid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pacsweb_ye">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="shapearea">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="shapelen">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="137,17,21,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>owner_name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name=".SF NS Text"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>merged_parcels_grays_harbor_county_wa20180906120527088</id>
-      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='tid' srid=2927 type=Polygon table="public"."merged_parcels_grays_harbor_county_wa" (geom) sql=</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>merged_parcels_grays_harbor_county_wa</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=lcc +lat_1=47.33333333333334 +lat_2=45.83333333333334 +lat_0=45.33333333333334 +lon_0=-120.5 +x_0=500000.0001016001 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
-          <srsid>896</srsid>
-          <srid>2927</srid>
-          <authid>EPSG:2927</authid>
-          <description>NAD83(HARN) / Washington South (ftUS)</description>
-          <projectionacronym>lcc</projectionacronym>
+          <proj4>+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28001</srsid>
+          <srid>5070</srid>
+          <authid>EPSG:5070</authid>
+          <description>NAD83 / Conus Albers</description>
+          <projectionacronym>aea</projectionacronym>
           <ellipsoidacronym>GRS80</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="owner">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="254,245,56,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+          <rasterTransparency/>
+          <colorPalette>
+            <paletteEntry value="0" color="#000000" label="0"/>
+            <paletteEntry value="1" color="#d1d1d1" label="1"/>
+            <paletteEntry value="2" color="#ced1ce" label="2"/>
+            <paletteEntry value="3" color="#ccd1cc" label="3"/>
+            <paletteEntry value="4" color="#cccecc" label="4"/>
+            <paletteEntry value="5" color="#c6ccc6" label="5"/>
+            <paletteEntry value="6" color="#c6ccc6" label="6"/>
+            <paletteEntry value="7" color="#c4ccc4" label="7"/>
+            <paletteEntry value="8" color="#c1c9c1" label="8"/>
+            <paletteEntry value="9" color="#bfc9bf" label="9"/>
+            <paletteEntry value="10" color="#bfc6bf" label="10"/>
+            <paletteEntry value="11" color="#bcc6bc" label="11"/>
+            <paletteEntry value="12" color="#bac6ba" label="12"/>
+            <paletteEntry value="13" color="#b7c4b7" label="13"/>
+            <paletteEntry value="14" color="#b5c1b5" label="14"/>
+            <paletteEntry value="15" color="#b2c1b2" label="15"/>
+            <paletteEntry value="16" color="#afc1af" label="16"/>
+            <paletteEntry value="17" color="#afbfaf" label="17"/>
+            <paletteEntry value="18" color="#adbfad" label="18"/>
+            <paletteEntry value="19" color="#aabfaa" label="19"/>
+            <paletteEntry value="20" color="#a8bca8" label="20"/>
+            <paletteEntry value="21" color="#a5bca5" label="21"/>
+            <paletteEntry value="22" color="#a5baa5" label="22"/>
+            <paletteEntry value="23" color="#a3baa3" label="23"/>
+            <paletteEntry value="24" color="#a0b7a0" label="24"/>
+            <paletteEntry value="25" color="#9eb79e" label="25"/>
+            <paletteEntry value="26" color="#9bb59b" label="26"/>
+            <paletteEntry value="27" color="#99b599" label="27"/>
+            <paletteEntry value="28" color="#99b599" label="28"/>
+            <paletteEntry value="29" color="#96b296" label="29"/>
+            <paletteEntry value="30" color="#93b293" label="30"/>
+            <paletteEntry value="31" color="#91af91" label="31"/>
+            <paletteEntry value="32" color="#8eaf8e" label="32"/>
+            <paletteEntry value="33" color="#8cad8c" label="33"/>
+            <paletteEntry value="34" color="#8cad8c" label="34"/>
+            <paletteEntry value="35" color="#89aa89" label="35"/>
+            <paletteEntry value="36" color="#87aa87" label="36"/>
+            <paletteEntry value="37" color="#84aa84" label="37"/>
+            <paletteEntry value="38" color="#82a882" label="38"/>
+            <paletteEntry value="39" color="#82a882" label="39"/>
+            <paletteEntry value="40" color="#7fa57f" label="40"/>
+            <paletteEntry value="41" color="#7ca57c" label="41"/>
+            <paletteEntry value="42" color="#7aa37a" label="42"/>
+            <paletteEntry value="43" color="#77a377" label="43"/>
+            <paletteEntry value="44" color="#75a375" label="44"/>
+            <paletteEntry value="45" color="#72a072" label="45"/>
+            <paletteEntry value="46" color="#72a072" label="46"/>
+            <paletteEntry value="47" color="#709e70" label="47"/>
+            <paletteEntry value="48" color="#6d9e6d" label="48"/>
+            <paletteEntry value="49" color="#6b9e6b" label="49"/>
+            <paletteEntry value="50" color="#6b9b6b" label="50"/>
+            <paletteEntry value="51" color="#669966" label="51"/>
+            <paletteEntry value="52" color="#669966" label="52"/>
+            <paletteEntry value="53" color="#639963" label="53"/>
+            <paletteEntry value="54" color="#609660" label="54"/>
+            <paletteEntry value="55" color="#5e965e" label="55"/>
+            <paletteEntry value="56" color="#5b935b" label="56"/>
+            <paletteEntry value="57" color="#5b935b" label="57"/>
+            <paletteEntry value="58" color="#599359" label="58"/>
+            <paletteEntry value="59" color="#569156" label="59"/>
+            <paletteEntry value="60" color="#548e54" label="60"/>
+            <paletteEntry value="61" color="#518e51" label="61"/>
+            <paletteEntry value="62" color="#4f8e4f" label="62"/>
+            <paletteEntry value="63" color="#4f8c4f" label="63"/>
+            <paletteEntry value="64" color="#4c8c4c" label="64"/>
+            <paletteEntry value="65" color="#498c49" label="65"/>
+            <paletteEntry value="66" color="#478947" label="66"/>
+            <paletteEntry value="67" color="#448944" label="67"/>
+            <paletteEntry value="68" color="#448744" label="68"/>
+            <paletteEntry value="69" color="#3f873f" label="69"/>
+            <paletteEntry value="70" color="#3f843f" label="70"/>
+            <paletteEntry value="71" color="#3d843d" label="71"/>
+            <paletteEntry value="72" color="#3a823a" label="72"/>
+            <paletteEntry value="73" color="#388238" label="73"/>
+            <paletteEntry value="74" color="#388238" label="74"/>
+            <paletteEntry value="75" color="#357f35" label="75"/>
+            <paletteEntry value="76" color="#337f33" label="76"/>
+            <paletteEntry value="77" color="#307c30" label="77"/>
+            <paletteEntry value="78" color="#2d7c2d" label="78"/>
+            <paletteEntry value="79" color="#2b7a2b" label="79"/>
+            <paletteEntry value="80" color="#287a28" label="80"/>
+            <paletteEntry value="81" color="#287728" label="81"/>
+            <paletteEntry value="82" color="#267726" label="82"/>
+            <paletteEntry value="83" color="#237723" label="83"/>
+            <paletteEntry value="84" color="#217521" label="84"/>
+            <paletteEntry value="85" color="#217521" label="85"/>
+            <paletteEntry value="86" color="#1e721e" label="86"/>
+            <paletteEntry value="87" color="#1c721c" label="87"/>
+            <paletteEntry value="88" color="#197019" label="88"/>
+            <paletteEntry value="89" color="#167016" label="89"/>
+            <paletteEntry value="90" color="#147014" label="90"/>
+            <paletteEntry value="91" color="#116d11" label="91"/>
+            <paletteEntry value="92" color="#116d11" label="92"/>
+            <paletteEntry value="93" color="#0f6b0f" label="93"/>
+            <paletteEntry value="94" color="#0c6b0c" label="94"/>
+            <paletteEntry value="95" color="#0a6b0a" label="95"/>
+            <paletteEntry value="96" color="#076807" label="96"/>
+            <paletteEntry value="97" color="#056605" label="97"/>
+            <paletteEntry value="98" color="#056605" label="98"/>
+            <paletteEntry value="99" color="#026602" label="99"/>
+            <paletteEntry value="100" color="#006300" label="100"/>
+            <paletteEntry value="101" color="#000000" label="101"/>
+            <paletteEntry value="102" color="#000000" label="102"/>
+            <paletteEntry value="103" color="#000000" label="103"/>
+            <paletteEntry value="104" color="#000000" label="104"/>
+            <paletteEntry value="105" color="#000000" label="105"/>
+            <paletteEntry value="106" color="#000000" label="106"/>
+            <paletteEntry value="107" color="#000000" label="107"/>
+            <paletteEntry value="108" color="#000000" label="108"/>
+            <paletteEntry value="109" color="#000000" label="109"/>
+            <paletteEntry value="110" color="#000000" label="110"/>
+            <paletteEntry value="111" color="#000000" label="111"/>
+            <paletteEntry value="112" color="#000000" label="112"/>
+            <paletteEntry value="113" color="#000000" label="113"/>
+            <paletteEntry value="114" color="#000000" label="114"/>
+            <paletteEntry value="115" color="#000000" label="115"/>
+            <paletteEntry value="116" color="#000000" label="116"/>
+            <paletteEntry value="117" color="#000000" label="117"/>
+            <paletteEntry value="118" color="#000000" label="118"/>
+            <paletteEntry value="119" color="#000000" label="119"/>
+            <paletteEntry value="120" color="#000000" label="120"/>
+            <paletteEntry value="121" color="#000000" label="121"/>
+            <paletteEntry value="122" color="#000000" label="122"/>
+            <paletteEntry value="123" color="#000000" label="123"/>
+            <paletteEntry value="124" color="#000000" label="124"/>
+            <paletteEntry value="125" color="#000000" label="125"/>
+            <paletteEntry value="126" color="#000000" label="126"/>
+            <paletteEntry value="127" color="#4c4c4c" label="127"/>
+            <paletteEntry value="128" color="#000000" label="128"/>
+            <paletteEntry value="129" color="#000000" label="129"/>
+            <paletteEntry value="130" color="#000000" label="130"/>
+            <paletteEntry value="131" color="#000000" label="131"/>
+            <paletteEntry value="132" color="#000000" label="132"/>
+            <paletteEntry value="133" color="#000000" label="133"/>
+            <paletteEntry value="134" color="#000000" label="134"/>
+            <paletteEntry value="135" color="#000000" label="135"/>
+            <paletteEntry value="136" color="#000000" label="136"/>
+            <paletteEntry value="137" color="#000000" label="137"/>
+            <paletteEntry value="138" color="#000000" label="138"/>
+            <paletteEntry value="139" color="#000000" label="139"/>
+            <paletteEntry value="140" color="#000000" label="140"/>
+            <paletteEntry value="141" color="#000000" label="141"/>
+            <paletteEntry value="142" color="#000000" label="142"/>
+            <paletteEntry value="143" color="#000000" label="143"/>
+            <paletteEntry value="144" color="#000000" label="144"/>
+            <paletteEntry value="145" color="#000000" label="145"/>
+            <paletteEntry value="146" color="#000000" label="146"/>
+            <paletteEntry value="147" color="#000000" label="147"/>
+            <paletteEntry value="148" color="#000000" label="148"/>
+            <paletteEntry value="149" color="#000000" label="149"/>
+            <paletteEntry value="150" color="#000000" label="150"/>
+            <paletteEntry value="151" color="#000000" label="151"/>
+            <paletteEntry value="152" color="#000000" label="152"/>
+            <paletteEntry value="153" color="#000000" label="153"/>
+            <paletteEntry value="154" color="#000000" label="154"/>
+            <paletteEntry value="155" color="#000000" label="155"/>
+            <paletteEntry value="156" color="#000000" label="156"/>
+            <paletteEntry value="157" color="#000000" label="157"/>
+            <paletteEntry value="158" color="#000000" label="158"/>
+            <paletteEntry value="159" color="#000000" label="159"/>
+            <paletteEntry value="160" color="#000000" label="160"/>
+            <paletteEntry value="161" color="#000000" label="161"/>
+            <paletteEntry value="162" color="#000000" label="162"/>
+            <paletteEntry value="163" color="#000000" label="163"/>
+            <paletteEntry value="164" color="#000000" label="164"/>
+            <paletteEntry value="165" color="#000000" label="165"/>
+            <paletteEntry value="166" color="#000000" label="166"/>
+            <paletteEntry value="167" color="#000000" label="167"/>
+            <paletteEntry value="168" color="#000000" label="168"/>
+            <paletteEntry value="169" color="#000000" label="169"/>
+            <paletteEntry value="170" color="#000000" label="170"/>
+            <paletteEntry value="171" color="#000000" label="171"/>
+            <paletteEntry value="172" color="#000000" label="172"/>
+            <paletteEntry value="173" color="#000000" label="173"/>
+            <paletteEntry value="174" color="#000000" label="174"/>
+            <paletteEntry value="175" color="#000000" label="175"/>
+            <paletteEntry value="176" color="#000000" label="176"/>
+            <paletteEntry value="177" color="#000000" label="177"/>
+            <paletteEntry value="178" color="#000000" label="178"/>
+            <paletteEntry value="179" color="#000000" label="179"/>
+            <paletteEntry value="180" color="#000000" label="180"/>
+            <paletteEntry value="181" color="#000000" label="181"/>
+            <paletteEntry value="182" color="#000000" label="182"/>
+            <paletteEntry value="183" color="#000000" label="183"/>
+            <paletteEntry value="184" color="#000000" label="184"/>
+            <paletteEntry value="185" color="#000000" label="185"/>
+            <paletteEntry value="186" color="#000000" label="186"/>
+            <paletteEntry value="187" color="#000000" label="187"/>
+            <paletteEntry value="188" color="#000000" label="188"/>
+            <paletteEntry value="189" color="#000000" label="189"/>
+            <paletteEntry value="190" color="#000000" label="190"/>
+            <paletteEntry value="191" color="#000000" label="191"/>
+            <paletteEntry value="192" color="#000000" label="192"/>
+            <paletteEntry value="193" color="#000000" label="193"/>
+            <paletteEntry value="194" color="#000000" label="194"/>
+            <paletteEntry value="195" color="#000000" label="195"/>
+            <paletteEntry value="196" color="#000000" label="196"/>
+            <paletteEntry value="197" color="#000000" label="197"/>
+            <paletteEntry value="198" color="#000000" label="198"/>
+            <paletteEntry value="199" color="#000000" label="199"/>
+            <paletteEntry value="200" color="#000000" label="200"/>
+            <paletteEntry value="201" color="#000000" label="201"/>
+            <paletteEntry value="202" color="#000000" label="202"/>
+            <paletteEntry value="203" color="#000000" label="203"/>
+            <paletteEntry value="204" color="#000000" label="204"/>
+            <paletteEntry value="205" color="#000000" label="205"/>
+            <paletteEntry value="206" color="#000000" label="206"/>
+            <paletteEntry value="207" color="#000000" label="207"/>
+            <paletteEntry value="208" color="#000000" label="208"/>
+            <paletteEntry value="209" color="#000000" label="209"/>
+            <paletteEntry value="210" color="#000000" label="210"/>
+            <paletteEntry value="211" color="#000000" label="211"/>
+            <paletteEntry value="212" color="#000000" label="212"/>
+            <paletteEntry value="213" color="#000000" label="213"/>
+            <paletteEntry value="214" color="#000000" label="214"/>
+            <paletteEntry value="215" color="#000000" label="215"/>
+            <paletteEntry value="216" color="#000000" label="216"/>
+            <paletteEntry value="217" color="#000000" label="217"/>
+            <paletteEntry value="218" color="#000000" label="218"/>
+            <paletteEntry value="219" color="#000000" label="219"/>
+            <paletteEntry value="220" color="#000000" label="220"/>
+            <paletteEntry value="221" color="#000000" label="221"/>
+            <paletteEntry value="222" color="#000000" label="222"/>
+            <paletteEntry value="223" color="#000000" label="223"/>
+            <paletteEntry value="224" color="#000000" label="224"/>
+            <paletteEntry value="225" color="#000000" label="225"/>
+            <paletteEntry value="226" color="#000000" label="226"/>
+            <paletteEntry value="227" color="#000000" label="227"/>
+            <paletteEntry value="228" color="#000000" label="228"/>
+            <paletteEntry value="229" color="#000000" label="229"/>
+            <paletteEntry value="230" color="#000000" label="230"/>
+            <paletteEntry value="231" color="#000000" label="231"/>
+            <paletteEntry value="232" color="#000000" label="232"/>
+            <paletteEntry value="233" color="#000000" label="233"/>
+            <paletteEntry value="234" color="#000000" label="234"/>
+            <paletteEntry value="235" color="#000000" label="235"/>
+            <paletteEntry value="236" color="#000000" label="236"/>
+            <paletteEntry value="237" color="#000000" label="237"/>
+            <paletteEntry value="238" color="#000000" label="238"/>
+            <paletteEntry value="239" color="#000000" label="239"/>
+            <paletteEntry value="240" color="#000000" label="240"/>
+            <paletteEntry value="241" color="#000000" label="241"/>
+            <paletteEntry value="242" color="#000000" label="242"/>
+            <paletteEntry value="243" color="#000000" label="243"/>
+            <paletteEntry value="244" color="#000000" label="244"/>
+            <paletteEntry value="245" color="#000000" label="245"/>
+            <paletteEntry value="246" color="#000000" label="246"/>
+            <paletteEntry value="247" color="#000000" label="247"/>
+            <paletteEntry value="248" color="#000000" label="248"/>
+            <paletteEntry value="249" color="#000000" label="249"/>
+            <paletteEntry value="250" color="#000000" label="250"/>
+            <paletteEntry value="251" color="#000000" label="251"/>
+            <paletteEntry value="252" color="#000000" label="252"/>
+            <paletteEntry value="253" color="#000000" label="253"/>
+            <paletteEntry value="254" color="#000000" label="254"/>
+            <paletteEntry value="255" color="#ffffff" label="255"/>
+          </colorPalette>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
       <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>owner</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name=".SF NS Text"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1589132718">
-        <columns/>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>-124.28502655029299717</xmin>
-        <ymin>47.51421737670899859</ymin>
-        <xmax>-122.60285949706999986</xmax>
-        <ymax>48.14735412597659803</ymax>
-      </extent>
-      <id>merged_parcels_jefferson_county_wa20180906093824776</id>
-      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='tid' srid=4326 type=Polygon table="public"."merged_parcels_jefferson_county_wa" (geom) sql=</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>merged_parcels_jefferson_county_wa</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="owner">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="116,225,191,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>owner</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name=".SF NS Text"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>893471.6875</xmin>
-        <ymin>648223.75</ymin>
-        <xmax>1072562.25</xmax>
-        <ymax>841056.4375</ymax>
-      </extent>
-      <id>merged_parcels_mason_county_wa20180906115712613</id>
-      <datasource>dbname='postgres' host=localhost port=5432 sslmode=disable key='tid' srid=2286 type=Polygon table="public"."merged_parcels_mason_county_wa" (geom) sql=</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>merged_parcels_mason_county_wa</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=lcc +lat_1=47.33333333333334 +lat_2=45.83333333333334 +lat_0=45.33333333333334 +lon_0=-120.5 +x_0=500000.0001016001 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
-          <srsid>268</srsid>
-          <srid>2286</srid>
-          <authid>EPSG:2286</authid>
-          <description>NAD83 / Washington South (ftUS)</description>
-          <projectionacronym>lcc</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="owner">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="172,129,161,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>owner</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name=".SF NS Text"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="506">
-        <columns/>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -1170,27 +1640,11 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>forest_practice_applications_wa_evenage_expired_200520180703073931313</value>
-        <value>forest_practice_applications_wa_evenage_expired_200620180703073931680</value>
-        <value>forest_practice_applications_wa_evenage_expired_200720180703073932050</value>
-        <value>forest_practice_applications_wa_evenage_expired_200820180703073932747</value>
-        <value>forest_practice_applications_wa_evenage_expired_200920180703073932388</value>
-        <value>forest_practice_applications_wa_evenage_expired_201020180703073933115</value>
-        <value>forest_practice_applications_wa_evenage_expired_201120180703073930635</value>
+        <value>all_sightings20181013144200489</value>
         <value>wa_county_boundaries20180701092014387</value>
-        <value>wa_public_lands_200420180703074228455</value>
-        <value>land_parcels_jefferson_county_wa20180906085949475</value>
-        <value>land_parcels_jefferson_county_wa20180906092427493</value>
+        <value>WA_PLOT20181021151722408</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -1201,24 +1655,8 @@
         <value>2</value>
         <value>2</value>
         <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -1226,14 +1664,6 @@
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
